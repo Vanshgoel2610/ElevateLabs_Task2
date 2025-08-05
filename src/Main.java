@@ -51,7 +51,7 @@ public class Main {
         System.out.print("Enter Marks: ");
         double marks = sc.nextDouble();
         students.add(new Student(id, name, marks));
-        System.out.println("Student added.");
+        System.out.println("Student added with ID: " + id);
     }
 
     private static void viewStudents() {
@@ -76,7 +76,7 @@ public class Main {
                 double marks = sc.nextDouble();
                 s.setName(name);
                 s.setMarks(marks);
-                System.out.println("Student updated.");
+                System.out.println("Student updated: \n" + "Name: " + s.getName() + "\nMarks: " + s.getMarks());
                 return;
             }
         }
